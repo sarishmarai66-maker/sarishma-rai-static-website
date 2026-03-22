@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sarishma Rai — Student Portfolio</title>
+  <meta name="description" content="Portfolio website of Sarishma Rai — a passionate student showcasing projects, skills, and creative work." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+  <!-- ========== PRELOADER ========== -->
+  <div id="preloader">
+    <div class="loader">
+      <span class="loader-text">S</span>
+      <div class="loader-ring"></div>
+    </div>
+  </div>
+
+  <!-- ========== CURSOR GLOW (desktop only) ========== -->
+  <div id="cursor-glow"></div>
+
+  <!-- ========== NAVIGATION ========== -->
+  <header id="header">
+    <nav class="navbar">
+      <a href="#hero" class="nav-logo" id="nav-logo">
+        <span class="logo-bracket">&lt;</span>Sarishma<span class="logo-dot">.</span>Rai<span class="logo-bracket">/&gt;</span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#hero" class="nav-link active" data-section="hero">Home</a></li>
+        <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+        <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+        <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+        <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- ========== HERO SECTION ========== -->
+  <section id="hero" class="section hero-section">
+    <div class="hero-bg-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <p class="hero-greeting animate-on-scroll">Hello, I'm</p>
+        <h1 class="hero-name animate-on-scroll">Sarishma <span class="highlight">Rai</span></h1>
+        <p class="hero-tagline animate-on-scroll">
+          <span id="typed-text"></span><span class="typed-cursor">|</span>
+        </p>
+        <p class="hero-description animate-on-scroll">
+          A creative and driven student passionate about building beautiful digital experiences.
+          I love turning ideas into reality through clean code and thoughtful design.
+        </p>
+        <div class="hero-actions animate-on-scroll">
+          <a href="#projects" class="btn btn-primary" id="hero-cta-projects">
+            <span>View My Work</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <a href="#contact" class="btn btn-outline" id="hero-cta-contact">
+            <span>Get In Touch</span>
+          </a>
+        </div>
+        <div class="hero-socials animate-on-scroll">
+          <a href="https://github.com/" target="_blank" rel="noopener" class="social-link" id="social-github" aria-label="GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="https://linkedin.com/" target="_blank" rel="noopener" class="social-link" id="social-linkedin" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="https://twitter.com/" target="_blank" rel="noopener" class="social-link" id="social-twitter" aria-label="Twitter">
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+        </div>
+      </div>
+      <div class="hero-image-wrapper animate-on-scroll">
+        <div class="hero-image-border"></div>
+        <img src="assests/images/hero-profile.png" alt="Sarishma Rai" class="hero-image" id="hero-image" />
+        <div class="hero-image-dots"></div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-indicator" id="scroll-indicator" aria-label="Scroll down">
+      <span class="scroll-text">Scroll</span>
+      <span class="scroll-line"></span>
+    </a>
+  </section>
+
+  <!-- ========== ABOUT SECTION ========== -->
+  <section id="about" class="section about-section">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <p class="section-subtitle">Get to know me</p>
+        <h2 class="section-title">About <span class="highlight">Me</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-card animate-on-scroll">
+          <div class="about-icon"><i class="fa-solid fa-user-graduate"></i></div>
+          <h3 class="about-card-title">Student</h3>
+          <p class="about-card-text">Currently pursuing my studies with a strong focus on technology and creative problem solving.</p>
+        </div>
+        <div class="about-card animate-on-scroll">
+          <div class="about-icon"><i class="fa-solid fa-code"></i></div>
+          <h3 class="about-card-title">Developer</h3>
+          <p class="about-card-text">Crafting responsive and interactive web applications using modern technologies and best practices.</p>
+        </div>
+        <div class="about-card animate-on-scroll">
+          <div class="about-icon"><i class="fa-solid fa-palette"></i></div>
+          <h3 class="about-card-title">Designer</h3>
+          <p class="about-card-text">Bringing ideas to life with visually appealing, user-friendly interfaces and delightful experiences.</p>
+        </div>
+        <div class="about-card animate-on-scroll">
+          <div class="about-icon"><i class="fa-solid fa-lightbulb"></i></div>
+          <h3 class="about-card-title">Learner</h3>
+          <p class="about-card-text">Always exploring new tools, languages, and frameworks to broaden my skill set and stay current.</p>
+        </div>
+      </div>
+      <div class="about-bio animate-on-scroll">
+        <p>
+          I'm <strong>Sarishma Rai</strong>, a dedicated student who thrives at the intersection of
+          creativity and technology. My journey into the world of programming started out of curiosity,
+          and quickly grew into a deep passion. Whether it's designing clean UI layouts or solving
+          challenging coding problems, I enjoy every step of the process.
+        </p>
+        <p>
+          When I'm not coding, you'll find me exploring new tech trends, working on side projects, or
+          enjoying a good book. I believe in continuous learning and strive to improve with each
+          project I take on.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SKILLS SECTION ========== -->
+  <section id="skills" class="section skills-section">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <p class="section-subtitle">What I work with</p>
+        <h2 class="section-title">My <span class="highlight">Skills</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card animate-on-scroll" data-skill="HTML">
+          <div class="skill-icon"><i class="fa-brands fa-html5"></i></div>
+          <h4 class="skill-name">HTML5</h4>
+          <div class="skill-bar"><div class="skill-fill" data-percent="90"></div></div>
+        </div>
+        <div class="skill-card animate-on-scroll" data-skill="CSS">
+          <div class="skill-icon"><i class="fa-brands fa-css3-alt"></i></div>
+          <h4 class="skill-name">CSS3</h4>
+          <div class="skill-bar"><div class="skill-fill" data-percent="85"></div></div>
+        </div>
+        <div class="skill-card animate-on-scroll" data-skill="JS">
+          <div class="skill-icon"><i class="fa-brands fa-js"></i></div>
+          <h4 class="skill-name">JavaScript</h4>
+          <div class="skill-bar"><div class="skill-fill" data-percent="75"></div></div>
+        </div>
+        <div class="skill-card animate-on-scroll" data-skill="React">
+          <div class="skill-icon"><i class="fa-brands fa-react"></i></div>
+          <h4 class="skill-name">React</h4>
+          <div class="skill-bar"><div class="skill-fill" data-percent="60"></div></div>
+        </div>
+        <div class="skill-card animate-on-scroll" data-skill="Python">
+          <div class="skill-icon"><i class="fa-brands fa-python"></i></div>
+          <h4 class="skill-name">Python</h4>
+          <div class="skill-bar"><div class="skill-fill" data-percent="70"></div></div>
+        </div>
+        <div class="skill-card animate-on-scroll" data-skill="Git">
+          <div class="skill-icon"><i class="fa-brands fa-git-alt"></i></div>
+          <h4 class="skill-name">Git</h4>
+          <div class="skill-bar"><div class="skill-fill" data-percent="80"></div></div>
+        </div>
+        <div class="skill-card animate-on-scroll" data-skill="Figma">
+          <div class="skill-icon"><i class="fa-brands fa-figma"></i></div>
+          <h4 class="skill-name">Figma</h4>
+          <div class="skill-bar"><div class="skill-fill" data-percent="65"></div></div>
+        </div>
+        <div class="skill-card animate-on-scroll" data-skill="Node">
+          <div class="skill-icon"><i class="fa-brands fa-node-js"></i></div>
+          <h4 class="skill-name">Node.js</h4>
+          <div class="skill-bar"><div class="skill-fill" data-percent="55"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECTS SECTION ========== -->
+  <section id="projects" class="section projects-section">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <p class="section-subtitle">Recent work</p>
+        <h2 class="section-title">My <span class="highlight">Projects</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <article class="project-card animate-on-scroll" id="project-card-1">
+          <div class="project-image-wrapper">
+            <img src="assests/images/project-1.png" alt="Task Manager Dashboard" class="project-image" loading="lazy" />
+            <div class="project-overlay">
+              <a href="#" class="project-link" aria-label="Live demo"><i class="fa-solid fa-up-right-from-square"></i></a>
+              <a href="#" class="project-link" aria-label="Source code"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Task Manager Dashboard</h3>
+            <p class="project-desc">A clean, dark-themed task management dashboard with drag-and-drop cards, analytics charts, and real-time updates.</p>
+            <div class="project-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+            </div>
+          </div>
+        </article>
+        <!-- Project 2 -->
+        <article class="project-card animate-on-scroll" id="project-card-2">
+          <div class="project-image-wrapper">
+            <img src="assests/images/project-2.png" alt="E-Commerce Storefront" class="project-image" loading="lazy" />
+            <div class="project-overlay">
+              <a href="#" class="project-link" aria-label="Live demo"><i class="fa-solid fa-up-right-from-square"></i></a>
+              <a href="#" class="project-link" aria-label="Source code"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">E-Commerce Storefront</h3>
+            <p class="project-desc">A responsive online store with product filtering, shopping cart, and a seamless checkout experience.</p>
+            <div class="project-tags">
+              <span class="tag">React</span>
+              <span class="tag">CSS</span>
+              <span class="tag">Node.js</span>
+            </div>
+          </div>
+        </article>
+        <!-- Project 3 -->
+        <article class="project-card animate-on-scroll" id="project-card-3">
+          <div class="project-image-wrapper">
+            <img src="assests/images/project-3.png" alt="Weather App" class="project-image" loading="lazy" />
+            <div class="project-overlay">
+              <a href="#" class="project-link" aria-label="Live demo"><i class="fa-solid fa-up-right-from-square"></i></a>
+              <a href="#" class="project-link" aria-label="Source code"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Weather App</h3>
+            <p class="project-desc">A visually rich weather application with dynamic backgrounds, location-based forecasts, and animated icons.</p>
+            <div class="project-tags">
+              <span class="tag">JavaScript</span>
+              <span class="tag">API</span>
+              <span class="tag">CSS</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT SECTION ========== -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <p class="section-subtitle">Let's connect</p>
+        <h2 class="section-title">Contact <span class="highlight">Me</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info animate-on-scroll">
+          <h3 class="contact-heading">Let's work together!</h3>
+          <p class="contact-text">
+            I'm always open to discussing new projects, creative ideas, or opportunities to collaborate.
+            Feel free to reach out through the form or via my socials!
+          </p>
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="contact-item-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div>
+                <p class="contact-item-label">Email</p>
+                <a href="mailto:sarishma@example.com" class="contact-item-value">sarishma@example.com</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div>
+                <p class="contact-item-label">Location</p>
+                <p class="contact-item-value">Nepal</p>
+              </div>
+            </div>
+          </div>
+          <div class="contact-socials">
+            <a href="https://github.com/" target="_blank" rel="noopener" class="social-circle" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://linkedin.com/" target="_blank" rel="noopener" class="social-circle" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://twitter.com/" target="_blank" rel="noopener" class="social-circle" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://instagram.com/" target="_blank" rel="noopener" class="social-circle" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+        <form class="contact-form animate-on-scroll" id="contact-form" autocomplete="off">
+          <div class="form-group">
+            <input type="text" id="form-name" name="name" class="form-input" placeholder=" " required />
+            <label for="form-name" class="form-label">Your Name</label>
+            <span class="form-line"></span>
+          </div>
+          <div class="form-group">
+            <input type="email" id="form-email" name="email" class="form-input" placeholder=" " required />
+            <label for="form-email" class="form-label">Your Email</label>
+            <span class="form-line"></span>
+          </div>
+          <div class="form-group">
+            <input type="text" id="form-subject" name="subject" class="form-input" placeholder=" " />
+            <label for="form-subject" class="form-label">Subject</label>
+            <span class="form-line"></span>
+          </div>
+          <div class="form-group">
+            <textarea id="form-message" name="message" class="form-input form-textarea" placeholder=" " required></textarea>
+            <label for="form-message" class="form-label">Your Message</label>
+            <span class="form-line"></span>
+          </div>
+          <button type="submit" class="btn btn-primary btn-submit" id="form-submit">
+            <span>Send Message</span>
+            <i class="fa-solid fa-paper-plane"></i>
+          </button>
+          <p class="form-status" id="form-status"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer id="footer" class="footer">
+    <div class="container footer-inner">
+      <a href="#hero" class="footer-logo">
+        <span class="logo-bracket">&lt;</span>Sarishma<span class="logo-dot">.</span>Rai<span class="logo-bracket">/&gt;</span>
+      </a>
+      <p class="footer-copy">&copy; 2026 Sarishma Rai. Crafted with <i class="fa-solid fa-heart heart-beat"></i> &amp; code.</p>
+      <div class="footer-links">
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== BACK TO TOP ========== -->
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
